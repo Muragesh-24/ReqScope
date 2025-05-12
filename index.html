@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReqScope – API Tester</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark">
+  <nav class="navbar">
+    <h1 class="app-title">ReqScope</h1>
+    <button id="themeToggle" class="theme-toggle">🌙</button>
+  </nav>
+
+  <main class="main-content">
+    <input type="text" id="apiUrl" class="input-field" placeholder="Enter API URL" />
+    
+    <select id="httpMethod" class="select-method">
+      <option>GET</option>
+      <option>POST</option>
+      <option>PUT</option>
+      <option>DELETE</option>
+    </select>
+
+    <textarea id="requestHeaders" class="input-area" placeholder='Headers (JSON format)'></textarea>
+    <textarea id="requestBody" class="input-area" placeholder='Body (for POST/PUT)'></textarea>
+
+    <button id="sendRequest" class="send-btn">Send Request</button>
+
+    <section class="response-box" id="responseBox"></section>
+
+    <h2 class="history-title">Request History</h2>
+    <ul id="historyList" class="history-list"></ul>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
